@@ -1,0 +1,94 @@
+.profil{
+  /*margin-top: 2rem;*/
+}
+.preview {
+  /* margin-left: 15px; */
+
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  width: 400px;
+  /* height: 113px; */
+  position: relative;
+
+  overflow: hidden;
+}
+.imgWrapper {
+  width: 140px;
+  height: 100%;
+  overflow: hidden;
+
+  position: relative;
+  z-index: 3;
+
+  /*border-right: 2px solid #C2C2C2;*/
+}
+
+.info {
+  padding: 17px;
+}
+.info__title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.data {
+  margin-top: 1rem;
+}
+.data li {
+  margin: 2px 0;
+
+  font-size: 14px;
+  line-height: 15px;
+}
+
+
+/*MYPOST*/
+
+.myPosts {
+  margin-top: 30px;
+}
+.myPosts__title {
+  font-size: 16px;
+  text-align: left;
+
+  margin: 48px 0 19px 10px;
+}
+
+.postContent {
+  width: 100%;
+  max-width: 730px;
+
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  .postContent {
+    max-width: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .preview {
+    flex-direction: column;
+    height: auto;
+    width: 210px;
+
+    margin: 0 auto;
+  }
+  .imgWrapper {
+    width: 100%;
+  }
+}
+
+/* Вводим новый столбец */
+/* .postContent::before {
+  content: "";
+  flex-basis: 100%;
+
+  /* display: inline-block; 
+  /* height: 50%; 
+  width: 0;
+  order: 2;
+} */
